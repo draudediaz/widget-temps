@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      </style>
+    <script src="https://kit.fontawesome.com/c87f67bdac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script defer src="scripts.js"></script>
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="logo de la app" width="80px"></div>
+        <div class="title"><h1>Weather World</h1></div>
+    </header>
+    <section class="searchArea">
+        <label class="textSearch" for="city-search">Enter location:</label>
+        <input type="search" id="search-location">
+        <button class="searchButton" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </section>
+    <section class="weatherMain" id="weatherMain">
+        <div class="mainTitle" id="mainTitle"></div>
+        <div class="mainResultWeather">
+            <div class="imageMain" id="imageMain">
+                <img src="" alt="" width="200px">
+            </div>
+            <div class="infoMain">
+                <div class="infoWeatherMain" id="infoWeatherMain"></div>
+                <div class="temperatureMain" id="temperatureMain"></div>
+                <div class="windMain" id="windMain"></div>
+            </div>
+        </div>
+    </section>
+    <section class="cities">
+        <div class="miniCities" id="barcelona">
+            <div class="titleMini" id="titleMini1">
+                <h2>Barcelona</h2>
+            </div>
+            <div class="imageMini" id="imageMini1">
+                <img src="images/Snow.png" alt="" width="60px" height="auto">
+            </div>
+            <div class="infoMini" id="infoMini">
+                <div class="temperatureMini" id="temperatureMini1"><p><i class="fa fa-thermometer"></i> 18º</p></div>
+                <div class="windMini" id="windMini1"><p><i class="fa fa-wind"></i> 5 km/h</p></div>
+            </div>
+        </div>
+        <div class="miniCities" id="london">
+            <div class="titleMini" id="titleMini">
+                <h2>london</h2>
+            </div>
+            <div class="imageMini" id="imageMini2">
+                <img src="images/Thunderstorm.png" alt="" width="60px" height="auto">
+            </div>
+            <div class="infoMini" id="infoMini">
+                <div class="temperatureMini" id="temperatureMini2"><p><i class="fa fa-thermometer"></i> 9º</p></div>
+                <div class="windMini" id="windMini2"><p><i class="fa fa-wind"></i> 43 km/h</p></div>
+            </div>
+        </div>
+        <div class="miniCities" id="newyork">
+            <div class="titleMini" id="titleMini">
+                <h2>New York</h2>
+            </div>
+            <div class="imageMini" id="imageMini3">
+                <img src="images/Rain.png" alt="" width="60px" height="auto">
+            </div>
+            <div class="infoMini" id="infoMini">
+                <div class="temperatureMini" id="temperatureMini3"><p><i class="fa fa-thermometer"></i> 7º</p></div>
+                <div class="windMini" id="windMini3"><p><i class="fa fa-wind"></i> 23 km/h</p></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

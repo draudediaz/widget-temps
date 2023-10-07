@@ -1,0 +1,202 @@
+
+body{
+    width: 600px;
+}
+
+h2{
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color:#367BB4;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: solid white;
+}
+
+header .logo{
+    width: 20%;
+    padding-left: 30px;
+}
+
+header .title{
+    width: 50%;
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.searchArea{
+    height: 120px;
+    background-color: #367BB4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+label {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color:white;
+    font-size: 24px;  
+    margin:10px;  
+}
+
+input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+    height: 40px;
+}
+
+input:focus {
+    outline-color: white;
+}
+
+button {
+    width: 30px;
+    margin:10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #e8e8e8;
+    width: 48px;
+    border-radius: 15px;
+    padding: 4px;
+    border: solid white;
+}
+
+.weatherMain {
+    height: 350px;
+    background-color: #367BB4;
+    display:none;
+}
+
+.weatherMain .mainTitle{
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.weatherMain .mainResultWeather{
+    display: flex;
+}
+
+.weatherMain .mainResultWeather .imageMain{
+    width: 50%;
+    text-align: center;
+}
+
+.weatherMain .mainResultWeather .infoMain{
+    width: 50%;
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cities {
+    height: 200px;
+    background-color: #367BB4;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cities .miniCities {
+    background-color: #367BB4;
+    width: 32%;
+    display:plex;
+    border: solid white;
+    border-radius: 5px;
+}
+
+.cities .miniCities .titleMini{
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    height: 50px;
+    margin: 13px;
+}
+
+.cities .miniCities .imageMini{
+    text-align: center;
+    height: 70px;
+}
+
+.cities .miniCities .infoMini {
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width:600px){
+    body{
+        width:390px;
+    }
+
+    header {
+        align-items: center;
+        height: 100px;
+    }
+
+    header .title{
+        font-size:14px;
+    }
+    .cities {
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cities .miniCities {
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .weatherMain{
+        height: 100%;
+        border-top: solid white;
+        border-bottom: solid white;
+    }
+
+    .weatherMain .mainResultWeather{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weatherMain .mainTitle{
+        text-align: center;
+        padding-left:0px;
+    }
+    .weatherMain .mainResultWeather .infoMain{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
