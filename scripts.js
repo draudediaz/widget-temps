@@ -19,22 +19,22 @@ const weatherMain = document.getElementById("weatherMain")
 
 function chooseWeatherImage (number, isday){
   if(isday === 1){
-    if (number===0){return "Sun.png"}
-    else if (number===1 || number===2){return "Cloudy.png"}
-    else if (number===3) {return "Cloud.png"}
-    else if (number===45 || number===48) {return "Fog.png"}
-    else if (number===51 || number===53 || number===55 || number===56 || number===57 || number===61 || number===63 || number===65 || number===66 || number=== 67 || number===80 || number===81 || number===82){return "Rain.png"}
-    else if (number===71 || number===73 || number===75 || number===77 || number===85 || number===86) {return "Snow.png"}
-    else if (number===95 || number===96 || number===99){return "Thunderstorm.png"}
+    if (number===0){return "sun.png"}
+    else if (number===1 || number===2){return "cloudy.png"}
+    else if (number===3) {return "cloud.png"}
+    else if (number===45 || number===48) {return "fog.png"}
+    else if (number===51 || number===53 || number===55 || number===56 || number===57 || number===61 || number===63 || number===65 || number===66 || number=== 67 || number===80 || number===81 || number===82){return "rain.png"}
+    else if (number===71 || number===73 || number===75 || number===77 || number===85 || number===86) {return "snow.png"}
+    else if (number===95 || number===96 || number===99){return "thunderstorm.png"}
   }
   else if (isday=== 0){
     if (number===0){return "moon.png"}
-    else if (number===1 || number===2){return "NCloudy.png"}
-    else if (number===3) {return "Cloud.png"}
-    else if (number===45 || number===48) {return "Fog.png"}
-    else if (number===51 || number===53 || number===55 || number===56 || number===57 || number===61 || number===63 || number===65 || number===66 || number=== 67 || number===80 || number===81 || number===82){return "NRain.png"}
-    else if (number===71 || number===73 || number===75 || number===77 || number===85 || number===86) {return "NSnow.png"}
-    else if (number===95 || number===96 || number===99){return "NThunderstorm.png"}
+    else if (number===1 || number===2){return "ncloudy.png"}
+    else if (number===3) {return "cloud.png"}
+    else if (number===45 || number===48) {return "fog.png"}
+    else if (number===51 || number===53 || number===55 || number===56 || number===57 || number===61 || number===63 || number===65 || number===66 || number=== 67 || number===80 || number===81 || number===82){return "nrain.png"}
+    else if (number===71 || number===73 || number===75 || number===77 || number===85 || number===86) {return "nsnow.png"}
+    else if (number===95 || number===96 || number===99){return "nthunderstorm.png"}
 }
 }
 
